@@ -1,9 +1,11 @@
 %define upstream_name    File-ChangeNotify
 %define upstream_version 0.08
 
+%define _requires_exceptions perl(IO::KQueue)
+
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 
 Summary:    Inotify-based watcher subclass
 License:    GPL+ or Artistic
