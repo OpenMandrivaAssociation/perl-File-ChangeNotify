@@ -1,5 +1,5 @@
 %define upstream_name    File-ChangeNotify
-%define upstream_version 0.11
+%define upstream_version 0.12
 
 %define _requires_exceptions perl(IO::KQueue)
 
