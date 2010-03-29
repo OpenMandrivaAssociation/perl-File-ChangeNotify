@@ -19,13 +19,15 @@ BuildRequires: perl(File::Find)
 BuildRequires: perl(File::Path)
 BuildRequires: perl(File::Spec)
 BuildRequires: perl(File::Temp)
+BuildRequires: perl(Module::Build::Compat)
 BuildRequires: perl(Module::Pluggable::Object)
 BuildRequires: perl(Moose)
 BuildRequires: perl(MooseX::Params::Validate)
 BuildRequires: perl(MooseX::SemiAffordanceAccessor)
+BuildRequires: perl(Test::Exception)
 BuildRequires: perl(Test::More)
 BuildRequires: perl(Time::HiRes)
-BuildRequires: perl(Module::Build::Compat)
+
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
@@ -41,11 +43,10 @@ File::ChangeNotify::Watcher manpage.
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
-
-%{make}
+%make
 
 %check
-%{make} test
+%make test
 
 %install
 rm -rf %buildroot
