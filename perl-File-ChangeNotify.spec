@@ -1,5 +1,5 @@
 %define upstream_name    File-ChangeNotify
-%define upstream_version 0.19
+%define upstream_version 0.23
 
 %if %{_use_internal_dependency_generator}
 %define __noautoreq 'perl\\(IO::KQueue\\)'
@@ -8,14 +8,14 @@
 %endif
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%perl_convert_version 0.23
+Release:	1
 
 Summary:	Inotify-based watcher subclass
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/File/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/File/File-ChangeNotify-0.23.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Carp)
@@ -106,3 +106,4 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Wed Jul 08 2009 cpan2dist 0.07-1mdv
 - initial mdv release, generated with cpan2dist
+
