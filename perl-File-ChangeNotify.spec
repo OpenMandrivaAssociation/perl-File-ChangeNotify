@@ -8,14 +8,14 @@
 %endif
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version 0.23
+Version:	%perl_convert_version %{upstream_version}
 Release:	1
 
 Summary:	Inotify-based watcher subclass
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/File/File-ChangeNotify-0.23.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/File/File-ChangeNotify-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Carp)
