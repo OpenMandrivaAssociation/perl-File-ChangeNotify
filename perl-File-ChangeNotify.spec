@@ -19,6 +19,7 @@ Source0:	http://www.cpan.org/modules/by-module/File/File-ChangeNotify-%{upstream
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Carp)
+BuildRequires:  perl(Class::Load)
 BuildRequires:	perl(Class::MOP)
 BuildRequires:	perl(File::Find)
 BuildRequires:	perl(File::Path)
