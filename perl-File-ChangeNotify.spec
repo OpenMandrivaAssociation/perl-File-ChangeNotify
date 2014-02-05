@@ -1,5 +1,5 @@
 %define upstream_name    File-ChangeNotify
-%define upstream_version 0.23
+%define upstream_version 0.24
 
 %if %{_use_internal_dependency_generator}
 %define __noautoreq 'perl\\(IO::KQueue\\)'
@@ -107,4 +107,5 @@ perl Build.PL installdirs=vendor
 
 * Wed Jul 08 2009 cpan2dist 0.07-1mdv
 - initial mdv release, generated with cpan2dist
+
 

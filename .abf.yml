@@ -1,4 +1,5 @@
 removed_sources:
   File-ChangeNotify-0.19.tar.gz: 907521a17ed087b7875106473213f658da3e59a1
-sources:
   File-ChangeNotify-0.23.tar.gz: 9be76bd251732cfdcba7a8193fcc3272318a4b5b
+sources:
+  File-ChangeNotify-0.24.tar.gz: 4ec98e9bc1109ffbeec89f1aeefb1514f48794f2
