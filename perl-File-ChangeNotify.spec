@@ -14,7 +14,7 @@ Release:	3
 Summary:	Inotify-based watcher subclass
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/File/File-ChangeNotify-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
