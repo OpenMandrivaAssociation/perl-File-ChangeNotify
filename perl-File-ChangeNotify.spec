@@ -1,6 +1,4 @@
 %define upstream_name    File-ChangeNotify
-%define upstream_version 0.31
-
 %if %{_use_internal_dependency_generator}
 %define __noautoreq 'perl\\(IO::KQueue\\)'
 %else
@@ -8,14 +6,14 @@
 %endif
 
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	0.31
+Release:	2
 
 Summary:	Inotify-based watcher subclass
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/houseabsolute/File-ChangeNotify
-Source0:	https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/File-ChangeNotify-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/File-ChangeNotify-%{version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Carp)
@@ -45,7 +43,7 @@ Most of the documentation for this distro is in the
 File::ChangeNotify::Watcher manpage.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Build.PL installdirs=vendor
